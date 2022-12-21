@@ -1,0 +1,46 @@
+<html>
+<head><script src="/ibjslib/wai2iku6/ibfunctions.js"></script>
+<meta name="robots" content="none">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="black">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+</head>
+<body bgcolor="black" style="margin:0; overflow:hidden">
+<script disable-devtool-auto src="//fastly.jsdelivr.net/npm/disable-devtool@latest/disable-devtool.min.js"></script> <script src="keys.js"></script>
+<script src="//ssl.p.jwpcdn.com/player/v/8.25.7/jwplayer.js"></script>
+<script>jwplayer.key = "XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo"</script>
+<div id="player"></div>
+<script>
+	var playerInstance = jwplayer("player");
+	playerInstance.setup({
+"abouttext": "Descarga Lincol Play +",
+    "aboutlink": "",
+    "logo": {
+        "file":
+        "https://i.postimg.cc/xdYx9xb6/My-project-10.png",
+        "link": ""
+            },
+		playlist: [{
+			"sources": [{
+				"file":  "https://dtvott-cbc.akamaized.net/dash_live_1060/manifest.mpd",
+drm: {clearkey: {keyId:"e9bc6a1c64e05c35aa72e12b16d35247", key:"07c1735adac15de877df3f81b4fc4731"}
+				},
+			}]
+		}],
+		width: "100%",
+		height: "100%",
+		 autostart: true,
+      fullscreen: "true", 
+      primary: 'html5', 
+      stretching: "exactfit",
+                 skin: {
+       name: "black",
+       active: "orange", 
+       inactive: "orange",
+       background: "black"
+    }
+	});
+jwplayer("player").on("play", function(e){jwplayer("player").setCurrentAudioTrack(1)});
+	</script>
+</html>
